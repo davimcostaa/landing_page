@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg-background: #0A1619;
+    --bg-main-green: #00E3A5; 
+    --bg-titles-white: #F5FBF2;
+    --bg-second-green: #80AB9E;
+}
+
+body {
+    background-color: var(--bg-background);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    background-image: url('image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #09251E 0.5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+}
+
+.company_name {
+    color: var(--bg-titles-white);
+    font-weight: 400;
+    font-size: 45px;
+}
+
+.dot {
+    color: var(--bg-main-green);
+}
+
+.lista__links {
+    display: flex;
+    gap: 72px;
+    list-style: none;
+}
+
+.lista__links .paginas{
+    text-decoration: none;
+    color: var(--bg-titles-white);
+    font-size: 18px;
+    display: inline-block;
+    padding-bottom: 0.25rem; 
+    position: relative;
+}
+
+.paginas::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--bg-main-green);
+    transition: width 0.25s ease-out;
+  }
+
+
+  .paginas:hover {
+        color: var(--bg-main-green);
+  }
+
+  .paginas:hover::before {
+    width: 70%;
+  }
+
+
+.btn-join {
+    color: var(--bg-titles-white);
+    text-decoration: none;
+    border: 1px solid var(--bg-main-green);
+    padding: 24px 48px;
+    border-radius: 5px;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 100px;
+    
+}
+
+.main .titles h3 {
+    font-weight: 400;
+    font-size: 28px;
+    color: var(--bg-second-green);
+    margin-bottom: 0;
+}
+
+.main .titles h2 {
+    margin-top: 6px;
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--bg-titles-white);
+}
+
+.main img {
+  width: 65%;
+}
+
+
