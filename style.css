@@ -2,27 +2,33 @@
 
 :root {
     --bg-background: #0A1619;
+    --bg-green: #091D18;
     --bg-main-green: #00E3A5; 
     --bg-titles-white: #F5FBF2;
     --bg-second-green: #80AB9E;
+    --bg-black: #181818;
+    --bg-gray: #9E9E9E;
 }
 
 body {
-    background-color: var(--bg-background);
+    background-color: #000000;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 .header {
-    background-image: url('image.png');
+    background-color: var(--bg-black);
+    background-image: url('assets/img/background.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .navbar {
+    padding: 35px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: #09251E 0.5;
+    background: #09251E 0.8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 100px;
 }
@@ -82,13 +88,26 @@ body {
 }
 
 .main {
-    width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-left: 100px;
     
+}
+
+.btn-whitepaper {
+    text-decoration: none;
+    background-color: var(--bg-main-green);
+    color: var(--bg-black);
+    position: absolute;
+    margin-top: 4rem;
+    padding: 1.5rem;
+    width: 13%;
+    text-align: center;
+    font-weight: 800;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px var(--bg-main-green), inset 0 0 15px var(--bg-second-green);
 }
 
 .main .titles h3 {
@@ -109,4 +128,63 @@ body {
   width: 65%;
 }
 
+.title-achievements {
+    color: var(--bg-second-green);
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px; 
+    margin-bottom: 1rem;
+}
 
+.text-achievements {
+    text-align: center;
+    color: var(--bg-titles-white);
+    font-weight: 700;
+    font-size: 36px;
+}
+ 
+.achievements-metrics {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.title-metrics {
+    color: var(--bg-main-green);
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.text-metrics {
+    color: var(--bg-gray);
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+
+.world-image {
+    display: flex;
+    justify-content: center;
+}
+
+.world-image img {
+    max-width: 100%;
+}
+
+
+.companies-list {
+    border-radius: 130px;
+    padding: 5rem;
+    margin: 0 1rem 1rem 1rem;
+    display: flex;
+    background-color: var(--bg-green);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.companies-list li img {
+    opacity: 30%;
+}
