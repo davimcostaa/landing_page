@@ -8,6 +8,7 @@
     --bg-second-green: #80AB9E;
     --bg-black: #181818;
     --bg-gray: #9E9E9E;
+    --bg-blue: #BDF3FF;
 }
 
 body {
@@ -178,7 +179,7 @@ body {
 .companies-list {
     border-radius: 130px;
     padding: 5rem;
-    margin: 0 1rem 1rem 1rem;
+    margin: 0 2rem 2rem 2rem;
     display: flex;
     background-color: var(--bg-green);
     justify-content: space-around;
@@ -188,3 +189,68 @@ body {
 .companies-list li img {
     opacity: 30%;
 }
+
+.about-us {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 1rem 2.5rem 1rem 2.5rem;
+    background: #09251E 0.2;
+
+}
+
+
+.about-us h2 {
+    font-weight: 700;
+    font-size: 36px;
+    color: #F5FBF2;
+}
+
+.about-us-text p {
+    margin-top: 3rem;
+    color: var(--bg-second-green);
+    font-weight: 400;
+    line-height: 32px;
+    font-size: 20px;
+    margin-bottom: 5rem;
+}
+
+.attributes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.attributes-square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) -30.29%, rgba(255, 255, 255, 0) 144.92%);
+    backdrop-filter: blur(25px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 317px;
+    height: 229px;
+}
+
+.attributes-square h3 {
+    color: var(--bg-blue);
+    font-size: 22px;
+}
+
+.attributes > div:nth-child(1) {
+    background-color: red;
+}
+
+.btn-learn {
+    margin-top: 50px;
+    color: var(--bg-titles-white);
+    text-decoration: none;
+    border: 1px solid var(--bg-main-green);
+    padding: 24px 100px;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
