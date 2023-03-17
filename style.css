@@ -14,7 +14,7 @@
 body {
     background-color: #000000;
     font-family: 'Montserrat', sans-serif;
-    
+    overflow-x: hidden;
 }
 
 .header {
@@ -182,7 +182,7 @@ body {
     margin: 0 2rem 2rem 2rem;
     display: flex;
     background-color: var(--bg-green);
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -191,13 +191,13 @@ body {
 }
 
 .about-us {
+    max-width: 100%;
     display: grid;
-    grid-template-columns: 40% 60%;
-    margin: 1rem 2.5rem 1rem 2.5rem;
+    gap: 5rem;
+    grid-template-columns: 45% 55%;
+    margin: 3rem 10rem 3rem 6rem;
     background: #09251E 0.2;
-
 }
-
 
 .about-us h2 {
     font-weight: 700;
@@ -218,6 +218,8 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
+    position: relative;
+    gap: 1.5rem;
 }
 
 .attributes-square {
@@ -230,8 +232,8 @@ body {
     backdrop-filter: blur(25px);
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    width: 317px;
-    height: 229px;
+    width: 18.75rem;
+    height: 14.313rem;
 }
 
 .attributes-square h3 {
@@ -239,8 +241,35 @@ body {
     font-size: 22px;
 }
 
-.attributes > div:nth-child(1) {
-    background-color: red;
+.attributes > div:nth-child(2) {
+    position: absolute;
+    right: 0;
+    top: 130px;
+    left: 350px;
+    z-index: 10;
+}
+
+.teste {
+    position: absolute;
+    z-index: 0;
+    text-align: center;
+}
+
+.teste-imagem {
+    position: relative;
+    top: -5rem;
+    left: -3rem;
+}
+ 
+.attributes > div:nth-child(3) {
+    position: relative; 
+    left: 105px;
+}
+
+.attributes > div:nth-child(4) {
+    position: relative;
+    top: -120px;
+    left: 435px;
 }
 
 .btn-learn {
