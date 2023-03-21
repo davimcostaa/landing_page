@@ -249,16 +249,25 @@ body {
     z-index: 10;
 }
 
-.teste {
+.info {
     position: absolute;
     z-index: 0;
     text-align: center;
 }
 
-.teste-imagem {
+.blur-image {
     position: relative;
-    top: -5rem;
+    
+}
+
+.left {
+    top: -4rem;
     left: -3rem;
+}
+
+.right {
+    top: -4.5rem;
+    right: -3rem;
 }
  
 .attributes > div:nth-child(3) {
