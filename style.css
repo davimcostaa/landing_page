@@ -232,7 +232,6 @@ body {
 .attributes {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
     position: relative;
     gap: 1.5rem;
 }
@@ -307,3 +306,76 @@ body {
     font-size: 18px;
 }
 
+
+.how-we-work h2 {
+    color: var(--bg-titles-white);
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+}
+
+
+.list {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: center;
+    background: rgba(9, 29, 24, 0.5);
+    border-radius: 50px;
+    margin-top: 2rem;
+    padding: 30px;
+    background-image: url(/assets/img/bg-list.png);
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+
+.div-right {
+    margin-left: 80px;
+    margin-right: -150px;
+}
+
+.div-left {
+    margin-right: 80px;
+    margin-left: -150px;
+}
+
+.first-half {
+    display: flex;
+    align-items: center;
+}
+
+.list-number-right {
+    margin-left: 30px;
+    margin-right: 20px;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 129px;
+    color: var(--bg-second-green);
+}
+
+.list-number-left {
+     background-color: transparent;
+     font-weight: 700;
+     font-size: 129px;
+     color: var(--bg-second-green);
+     margin-right: 30px;
+     margin-left: 20px;
+ }
+ 
+
+.list-title {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--bg-titles-white);
+    margin-bottom: 15px;
+}
+
+.list-text {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--bg-second-green);
+}
+
+.text-right {
+    text-align: right;
+}
