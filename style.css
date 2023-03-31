@@ -379,3 +379,69 @@ body {
 .text-right {
     text-align: right;
 }
+
+.users-reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.users-reviews h2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    color: #F5FBF2; 
+    text-align: center;
+}
+
+.swiper {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    
+}
+
+.user-picture {
+    border-radius: 50%;
+    width: 180px;
+    border: 4px solid var(--bg-main-green);
+}
+
+.card {
+    height: 300px;
+    background-color: var(--bg-green);
+    border-radius: 319.5px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 40% 60%;
+    
+}
+
+.card-text {
+    background: url(assets/img/quote.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    margin-right: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.user-text {
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--bg-second-green);
+    text-align: justify;
+}
+
+.user-name {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--bg-second-green);
+}

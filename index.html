@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>Document</title>
 </head>
 <body>
@@ -162,7 +163,6 @@
         </div>
     </section>
 
-
     <section class="how-we-work">
         <h2>How Do We Work Our System and Our Journey</h2>
 
@@ -218,5 +218,97 @@
             </div>
         </div>
     </section>
+
+
+    <section class="users-reviews">
+
+        <h2>Our community with User reviews</h2>
+
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <div class="card">
+                <div class="card-picture">
+                    <img src="assets/img/picture1.png" class="user-picture" alt="">
+                </div>
+
+                <div class="card-text">
+                    <p class="user-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis nihil, officia natus quisquam at officiis, maxime aliquid nobis et doloremque nesciunt qui sed fuga cumque deserunt harum commodi minus ducimus!</p>
+                    <h4 class="user-name">-Dake M. Chile, Business Owner of Bellie</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <div class="card">
+                <div class="card-picture">
+                    <img src="assets/img/picture1.png" class="user-picture" alt="">
+                </div>
+                <div class="card-text">
+                    <p class="user-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis nihil, officia natus quisquam at officiis, maxime aliquid nobis et doloremque nesciunt qui sed fuga cumque deserunt harum commodi minus ducimus!</p>
+                    <h4 class="user-name">-Dake M. Chile, Business Owner of Bellie</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <div class="card">
+                <div class="card-picture">
+                    <img src="assets/img/picture1.png" class="user-picture" alt="">
+                </div>
+                <div class="card-text">
+                    <p class="user-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis nihil, officia natus quisquam at officiis, maxime aliquid nobis et doloremque nesciunt qui sed fuga cumque deserunt harum commodi minus ducimus!</p>
+                    <h4 class="user-name">-Dake M. Chile, Business Owner of Bellie</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <div class="card">
+                <div class="card-picture">
+                    <img src="assets/img/picture1.png" class="user-picture" alt="">
+                </div>
+                <div class="card-text">
+                    <p class="user-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis nihil, officia natus quisquam at officiis, maxime aliquid nobis et doloremque nesciunt qui sed fuga cumque deserunt harum commodi minus ducimus!</p>
+                    <h4 class="user-name">-Dake M. Chile, Business Owner of Bellie</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    </section>
+    
+  
+
+]
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+   
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+  },
+        });
+    </script>
 </html>
